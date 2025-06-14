@@ -5,16 +5,27 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
   background-color: #232946;
+    font-family: 'General Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #fffffe;
+  font-family: 'Boska', serif;
+  font-weight: 400;
 }
 
+h1#logo-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #a7a9be;
+  line-height: 1.3rem;
+  letter-spacing: .1em;
+}
 p {
   color: #a7a9be;
 }
