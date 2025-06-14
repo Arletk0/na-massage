@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+  ;
+}
+
+html {
+  scroll-behavior: smooth;;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
+}
+
+ul.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  background-color: aqua;
+}
+
+a.nav-item {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
