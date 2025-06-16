@@ -47,6 +47,13 @@ header {
   /* padding: 1rem; */
   background-color: #917fd1;
   box-shadow: var(--shadow);
+}
+
+.header-container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -58,6 +65,15 @@ ul.nav-list {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.header-container svg {
+  transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
+.header-container svg:hover {
+  fill: #232946;
+  transform: scale(1.1);
 }
 
 a.nav-item {
