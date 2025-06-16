@@ -20,14 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* h1#logo-text {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #a7a9be;
-  line-height: 1.3rem;
-  letter-spacing: .1em;
-} */
-
 p {
   color: #a7a9be;
 }
@@ -42,15 +34,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* потім прибрати якщо буде потрібно */
-  margin: .1rem 0;
   /* padding: 1rem; */
   background-color: #917fd1;
   box-shadow: var(--shadow);
 }
 
 .header-container {
-  max-width: 75rem;
+  /* max-width: 75rem; */
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -91,7 +81,7 @@ a.nav-item:hover {
 }
 
 main {
-  max-width: 75rem;
+  /* max-width: 75rem; */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -108,9 +98,10 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .head-logo {
@@ -129,4 +120,53 @@ main {
 .head-social svg:hover {
   fill: #a98fff;
   transform: scale(1.1);
+}
+
+.video-background-container {
+  position: relative;
+  width: 100vw;           /* на всю ширину вікна */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 50vh;           /* або бажана висота */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(35, 41, 70, 0.4);
+  z-index: 2;
+}
+
+.video-background-container .content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.content h1,h3 {
+  color: #fffffe;
+  font-family: 'Boska', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
 }
